@@ -2,16 +2,18 @@
   //max-width: 1280px;
   margin: 0;
   padding: 0;
-  text-align: center;
+ 
 }
 
 .Navbar {
+  width: 100%;
   display: flex;
-  text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 15px;
   font-weight: bold;
+  
+
 }
 
 .Logo {
@@ -20,7 +22,6 @@
   align-items: center;
   justify-content: center;
   padding: 0 30px 0 30px;
-
 }
 
 ul {
@@ -49,7 +50,8 @@ li {
 .dropdown > li {
   text-align: start;
   font-weight: 500;
-  padding-left: 10px; 
+  padding-left: 10px;
+  padding-botton: 
 }
 
 .Icon-Drop {
@@ -66,7 +68,6 @@ li {
   display: flex;
   text-align: center;
   align-items: center;
-
 }
 
 button {
@@ -88,43 +89,40 @@ button:hover {
   margin: 0 5px 0 5px;
 }
 
-.Arrow:hover {
-  fill: hsl(0, 0%, 8%);
-}
-
 
 .Home{
   display: flex;
   align-items: center;
   justify-content: center;
   columns: 2;
-  margin: 30px 100px 30px 100px;
+  margin: 50px 20px 20px 20px;
+  
 }
 
 .Col-Home {
+  margin: 0 10px 0 10px;
   text-align: start;
   align-items: center;
   justify-content: center;
-  
-  
 }
 
 .title-home  {
-  font-size: 79px ;
+  font-size: 71px ;
   font-weight: bold;
   text-align: start ;
   width: 550px;
-  padding: 0;
-  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 44px;
+  line-height: 1;
 }
 
 .btn-home {
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 98%);
-  margin-top: 30px;
-  font-size: 18px;
+  margin-top: 45px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 15px 28px 15px 28px; 
+  padding: 18px 28px 18px 28px; 
 
 }
 
@@ -134,25 +132,88 @@ button:hover {
 
 
 .desc-home {
-  width: 450px ;
+  width: 420px ;
+  font-size: 16px;
+  font-weight:500;
+  color: hsl(0, 0%, 41%);
 }
 
 .Img-Home {
-  width: 380px;
+  width: 440px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.client-home > img {
-  margin: 40px 40px 0px 0px;
+.Logo-Client {
+  margin-top: 40px;
+  margin-left: 41px;
+  max-width: 100px;
 }
 
-.
+.Logo-Client2 {
+  margin-top: 40px;
+  margin-left: 41px;
+  max-width: 70px;
+}
+
+.Logo-Client3 {
+  margin-top: 40px;
+  margin-left: 41px;
+  max-width: 80px;
+}
+
+.Logo-Client4 {
+  margin-top: 40px;
+  margin-left: 41px;
+  max-width: 75px;
+}
+
+.hidden, .Mobile-Navbar {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 
 @media only screen and (max-width: 600px) {
   .Home{
-
     flex-direction: column-reverse;
   }
+
+  .User, .Pages  {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .Mobile-Navbar {
+    list-style-type: none;
+    display:flex;
+    flex: 1 1 0%;
+    visibility: visible;
+    justify-content: end;
+    items-align: center;
+    
+    
+    
+    
+  }
+
+  .menu {
+    width:28px;
+    height: 28px;
+  }
+
+  .Mobile {
+    position: absolute;
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.2);
+    top: 0px;
+    right: 0px;
+    width: 60%;
+    background-color: hsl(0, 0%, 98%);
+  }
+
+
+
 }

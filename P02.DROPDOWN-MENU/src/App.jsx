@@ -14,24 +14,19 @@ function App() {
 
     <div className='Home'>
 
-
-
     <div className='Col-Home'>
-      <div className='title-home'>
-        Make
-        <br/>
-        remote work
-      </div>
+      <div className='title-home'>Make<br/>
+      remote work</div>
       <div className='desc-home'>Get your team in sycnc, no matter your location.
         Streamline processes, create team rituals, and watch productivity soar.
       </div>
       <button className='btn-home'>Learn more</button>
       
       <div className='client-home'>
-      <img src={ImgClient1} />
-      <img src={ImgClient2} />
-      <img src={ImgClient3} />
-      <img src={ImgClient4} />
+      <img src={ImgClient1} className='Logo-Client'/>
+      <img src={ImgClient2} className='Logo-Client2' />
+      <img src={ImgClient3} className='Logo-Client3' />
+      <img src={ImgClient4} className='Logo-Client4' />
       </div>
       </div>  
       

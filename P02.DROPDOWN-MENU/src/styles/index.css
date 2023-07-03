@@ -30,5 +30,9 @@
   color: hsl(0, 0%, 8%);
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.Arrow:active{
+    color: hsl(0, 0%, 8%);
+}
+
+.attribution { font-size: 11px; text-align: center; position: static; bottom: 0; text-align: center; padding-bottom: 1rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
