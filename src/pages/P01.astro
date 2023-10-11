@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import qrCode from "../assets/image-qr-code.png";
+---
+<Layout title="Welcome to Astro.">
+	<main>
+
+    <div class="card">
+      <img class="qr" src={qrCode.src} alt="Qr-Code" />
+      <div class="title">Improve your front-end skills by building projects</div>
+      <div class="description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+    </div>
+
+<Footer profile="https://www.frontendmentor.io/profile/mcuyac" user="Mcuyaca" />
+	</main>
+</Layout>
+
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: "Outfit",sans-serif;
+    margin:0;
+    padding: 0;
+    min-height: 100vh;
+    columns: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 18.75rem;
+    padding: 1.3rem 0.6rem 1.3rem 0.6rem;
+    margin-bottom: 1.3rem;
+    border-radius: 1rem;
+    align-items: center;   
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.qr {
+    width: 17.5rem;
+    border-radius: 1rem;
+}
+
+.title {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    padding: 0.6rem 1.3rem 0.6rem 1.3rem;
+    font-size: 1.4rem;
+}
+
+.description {
+    padding: 0.6rem 1.3rem 0.6rem 1.3rem;
+    color: hsl(220, 15%, 55%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom:0; padding:20px; margin-top: auto;  }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+</style>

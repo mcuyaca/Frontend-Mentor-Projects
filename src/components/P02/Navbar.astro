@@ -1,0 +1,42 @@
+---
+import Logo from "../../assets/P02/logo.svg";
+import ArrowDown from "../../assets/P02/icon-arrow-down.svg";
+import ArrowUp from "../../assets/P02/icon-arrow-up.svg";
+import IconToDo from "../../assets/P02/icon-todo.svg";
+import IconCalendar from "../../assets/P02/icon-calendar.svg";
+import IconReminders from "../../assets/P02/icon-reminders.svg";
+import IconPlanning from "../../assets/P02/icon-planning.svg";
+
+const arrow, ArrowDown, arrowClick;
+
+---
+
+<nav class="Navbar">
+  <a class="Logo" href="#">
+    <img src={Logo} alt="Logo"/>
+  </a>
+
+  <ul class="Pages">
+    <li><a href="#">Features<img class="Arrow"src={arrow} onClick={arrowClick} /></a>
+
+    
+
+
+    </li>
+    <li><a href="#">Company<img class="Arrow"src={ArrowDown}/></a>
+    <ul class="dropdown">
+      <li><a href="#">History</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Blog</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+
+  <ul class="User">
+    <li><a href="#">Login</a></li>
+    <li><a href="#"><button>Register</button></a></li>
+  </ul>
+
+</nav>
